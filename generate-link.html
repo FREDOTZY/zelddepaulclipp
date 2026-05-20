@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generate Link</title>
+</head>
+<body>
+  <div class="phone-shell">
+    <main class="app">
+      <a class="back-link" href="dashboard.html">← Kembali</a>
+
+      <section class="hero-card">
+        <div class="hero-title">
+          <div>
+            <div class="eyebrow">🔗 Generate Link</div>
+            <h1>Analisis link video.</h1>
+            <p>Tempel link video, lalu AI akan membuat rekomendasi clip viral.</p>
+          </div>
+          <div class="upload-badge">🔗</div>
+        </div>
+
+        <form class="clip-form" id="clipForm">
+          <input id="videoLink" type="url" placeholder="Tempel link video di sini" />
+          <button type="submit">Mulai</button>
+        </form>
+      </section>
+
+      <section class="progress-card hidden" id="progressCard">
+        <div class="progress-head">
+          <span>AI sedang menganalisis...</span>
+          <strong id="percent">0%</strong>
+        </div>
+        <div class="progress-track"><div id="progressBar"></div></div>
+        <p id="progressText">Menyiapkan AI...</p>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <h2>Hasil AI</h2>
+        </div>
+        <div class="ai-result" id="aiResult">Hasil AI akan muncul di sini.</div>
+      </section>
+    </main>
+  </div>
+
+  <audio id="bgMusic" loop>
+    <source src="assets/music/bg-music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
