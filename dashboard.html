@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - AI Clip App</title>
+</head>
+<body>
+  <div class="phone-shell">
+    <main class="app">
+      <header class="topbar">
+        <a class="back-icon" href="index.html" title="Kembali" aria-label="Kembali ke halaman pembuka">←</a>
+        <div class="brand-search">Dashboard</div>
+      </header>
+
+      <section class="hero-card">
+        <div class="hero-title">
+          <div>
+            <div class="eyebrow">⚡ Dashboard</div>
+            <h1>Pilih fitur generate.</h1>
+            <p>Pilih apakah ingin generate dari link video atau upload video dari galeri.</p>
+          </div>
+          <div class="upload-badge">📊</div>
+        </div>
+
+        <div class="dashboard-grid">
+          <a class="dashboard-card" href="generate-link.html">
+            <span>🔗</span>
+            <h2>Generate Link</h2>
+            <p>Tempel link video lalu AI membuat ide clip viral.</p>
+          </a>
+
+          <a class="dashboard-card" href="generate-video.html">
+            <span>🎬</span>
+            <h2>Generate Video</h2>
+            <p>Upload video dari galeri untuk diproses menjadi clip.</p>
+          </a>
+        </div>
+      </section>
+    </main>
+  </div>
+  <audio id="bgMusic" loop>
+    <source src="assets/music/bg-music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
