@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generate Video</title>
+</head>
+<body>
+  <div class="phone-shell">
+    <main class="app">
+      <a class="back-link" href="dashboard.html">← Kembali</a>
+
+      <section class="hero-card" id="uploadZone">
+        <div class="hero-title">
+          <div>
+            <div class="eyebrow">🎬 Generate Video</div>
+            <h1>Upload video.</h1>
+            <p>Pilih video dari galeri. Untuk saat ini masih simulasi, backend upload video bisa kita lanjutkan setelah ini.</p>
+          </div>
+          <div class="upload-badge">⬆️</div>
+        </div>
+
+        <button class="primary-btn" id="chooseFile" type="button">Pilih Video</button>
+        <input id="fileInput" type="file" accept="video/*" hidden />
+      </section>
+
+      <section class="progress-card hidden" id="progressCard">
+        <div class="progress-head">
+          <span>Memproses video...</span>
+          <strong id="percent">0%</strong>
+        </div>
+        <div class="progress-track"><div id="progressBar"></div></div>
+        <p id="progressText">Menunggu video...</p>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <h2>Hasil Video</h2>
+        </div>
+        <div class="clip-list" id="clipList"></div>
+      </section>
+    </main>
+  </div>
+
+  <audio id="bgMusic" loop>
+    <source src="assets/music/bg-music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
